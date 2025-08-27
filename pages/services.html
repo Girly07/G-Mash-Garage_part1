@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - G-Mash Garage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>What We Offer</h2>
+    <p>We provide a wide range of services designed to keep your car running at peak performance:</p>
+    <ul>
+      <li><strong>Engine Diagnostics & Repairs:</strong> Using state-of-the-art tools to identify and fix engine problems.</li>
+      <li><strong>Brake & Suspension:</strong> Ensuring your car is safe with responsive brakes and smooth suspension.</li>
+      <li><strong>Oil Changes & Maintenance:</strong> Regular servicing to prevent breakdowns and extend vehicle life.</li>
+      <li><strong>Electrical System Repairs:</strong> Battery, alternator, and wiring checks for modern vehicles.</li>
+      <li><strong>Wheel Alignment & Balancing:</strong> Smooth rides and longer tire life with precision alignment.</li>
+    </ul>
+  </section>
+
+  <section class="booking">
+    <h2>Book an Appointment</h2>
+    <p>Fill out the form below to schedule your service. We will confirm your booking via email or phone.</p>
+    <form action="send_appointment.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option value="diagnostics">Engine Diagnostics</option>
+        <option value="brakes">Brake & Suspension</option>
+        <option value="oil">Oil Change & Maintenance</option>
+        <option value="electrical">Electrical Repairs</option>
+        <option value="alignment">Wheel Alignment</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="notes" placeholder="Additional Notes"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 G-Mash Garage</p>
+  </footer>
+</body>
+</html>
